@@ -1,0 +1,286 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: "PTSerif";
+    src: url("../fonts/PTSerif-Regular.ttf");
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.main-name{
+    display: inline-block;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    font-family: PTSerif;
+    font-size: 48px;
+    color: #0B0B0B;
+    opacity: 0.7;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+.images-flex-row{
+    margin-top: 20px !important;
+}
+
+.description{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    font-family: PTSerif;
+    font-size: 24px;
+    color: #0B0B0B;
+    opacity: 0.7;
+    margin-top: 12px;
+}
+
+.description-container{
+    text-align: center;
+}
+
+.main-grid{
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    height: 605px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.big-image{
+    width: 100%;
+    height: 100%;
+    max-height: 605px;
+    border-radius: 10px;
+}
+
+.small-image{
+    width: 100%;
+    height: 100%;
+    max-height: 297.5px;
+    border-radius: 10px;
+}
+
+.secondary-grid{
+    display: grid;
+    height: 100%;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 1080px) {
+    .main-grid{
+        height: 400px;
+    }
+    .big-image{
+        max-height: 400px;
+        min-height: 400px;
+    }
+    
+    .small-image{
+        max-height: 195px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    /*Main part*/
+    .description {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 795px) {
+
+    .main-grid{
+        display: flex;
+        flex-wrap: wrap;
+        height: 2800px;
+    }
+
+    .big-image{
+        max-height: 552px;
+        height: 552px;
+    }
+
+    .big-image-div{
+        max-height: 552px;
+        height: 552px;
+    }
+    
+    .small-image{
+        max-height: 552px;
+        height: 552px;
+    }
+
+    .secondary-grid{
+        height: 2238px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width: 660px) {
+    .main-grid{
+        height: 2500px;
+    }
+
+    .big-image-div{
+        max-height: 492px;
+        height: 492px;
+    }
+
+    .big-image{
+        max-height: 492px;
+        height: 492px;
+    }
+    
+    .small-image{
+        max-height: 492px;
+        height: 492px;
+    }
+
+    .secondary-grid{
+        height: 1998px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-grid{
+        height: 2200px;
+    }
+
+    .big-image-div{
+        max-height: 432px;
+        height: 432px;
+    }
+
+    .big-image{
+        max-height: 432px;
+        min-height: 432px;
+    }
+    
+    .small-image{
+        max-height: 432px;
+    }
+
+    .secondary-grid{
+        height: 1758px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .description {
+        font-size: 16px;
+    }
+    .main-grid{
+        height: 2000px;
+    }
+    .big-image-div{
+        max-height: 392px;
+        height: 392px;
+    }
+    .big-image{
+        max-height: 392px;
+        min-height: 392px;
+    }
+    
+    .small-image{
+        max-height: 392px;
+        height: 392px;
+    }
+
+    .secondary-grid{
+        height: 1598px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-grid{
+        height: 1900px;
+    }
+
+    .big-image-div{
+        max-height: 372px;
+        height: 372px;
+    }
+
+    .big-image{
+        max-height: 372px;
+        min-height: 372px;
+    }
+    
+    .small-image{
+        max-height: 372px;
+    }
+
+    .secondary-grid{
+        height: 1598px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .description {
+        font-size: 16px;
+    }
+
+    .main-grid{
+        height: 1500px;
+    }
+
+    .big-image-div{
+        max-height: 292px;
+        height: 292px;
+    }
+
+    .big-image{
+        max-height: 292px;
+        min-height: 292px;
+    }
+    
+    .small-image{
+        max-height: 292px;
+    }
+
+    .secondary-grid{
+        height: 1198px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-name{
+        font-size: 35px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .main-grid{
+        height: 900px;
+    }
+
+    .big-image-div{
+        max-height: 172px;
+        height: 172px;
+    }
+
+    .big-image{
+        max-height: 172px;
+        min-height: 172px;
+    }
+    
+    .small-image{
+        max-height: 172px;
+    }
+
+    .secondary-grid{
+        height: 718px;
+    }
+}

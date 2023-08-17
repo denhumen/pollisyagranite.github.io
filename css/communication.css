@@ -1,0 +1,104 @@
+@import "./reset.css";
+
+body{
+    background-color: white;
+}
+
+@font-face {
+    font-family: "PTSerif";
+    src: url("../fonts/PTSerif-Regular.ttf");
+}
+
+.communication-information{
+    width: 415px;
+    height: 523px;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.communication-information>.text{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: PTSerif;
+    color: #0B0B0B;
+    opacity: 0.7;
+}
+
+.communication-information > .button-group{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 19px;
+    margin-top: 25px;
+}
+
+.communication-information > .button-group > .button{
+    background-color: #1B3544;
+    border-radius: 10px;
+    min-height: 57px;
+    font-size: 20px;
+    color: white;
+    font-family: PTSerif;
+}
+
+.communication-information > .button-group > .button > i{
+    margin-right: 10px;
+}
+
+.communication-information > .button-group > .button:hover{
+    background-color: white;
+    color: #1B3544;
+    border: 1px solid #1B3544;
+    transition: .5s;
+}
+
+.communication-information > .company-contact-group{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-top: 20px;
+}
+
+.communication-information > .company-contact-group{
+    color: #1B3544;
+    font-family: PTSerif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.communication-information > .icon-group-header{
+    color: #1B3544;
+    font-family: PTSerif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.communication-information > .icon-group{
+    width: 215px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.communication-information > .icon-group > img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width: 440px) {
+    .communication-information{
+        width: 80%;
+    }
+
+    .communication-information > .text{
+        font-size: 30px;
+    }
+}
