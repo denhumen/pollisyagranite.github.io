@@ -11,7 +11,7 @@ body{
 
 .communication-information{
     width: 415px;
-    height: 523px;
+    height: 323px; /*Change here to add buttons*/
     margin: auto;
     margin-top: 48px;
     margin-bottom: 48px;
@@ -77,13 +77,32 @@ body{
     margin-top: 15px;
 }
 
-.communication-information > .icon-group{
+.communication-information > .icon-group-messangers{
     width: 215px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 5px;
     margin: auto;
     margin-top: 15px;
+}
+
+.communication-information > .icon-group-messangers > .item-container{
+    display: flex;
+    justify-content: center;
+}
+
+.communication-information > .icon-group-socials{
+    width: 115px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.communication-information > .icon-group-socials > .item-container{
+    display: flex;
+    justify-content: center;
 }
 
 .communication-information > .icon-group > img{

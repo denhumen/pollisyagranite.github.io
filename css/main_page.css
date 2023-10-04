@@ -11,7 +11,12 @@ a{
     src: url("../fonts/PTSerif-Regular.ttf");
 }
 
+html{
+    scroll-behavior:smooth
+}
+
 .main-block{
+    /* margin-top: 10px; */
     width: 100%;
     height: 633px;
     display: flex;
@@ -170,6 +175,7 @@ a{
 
 .swiper-slide-info-pavement>img{
     float: left;
+    width: auto;
     height: 200px;
 }
 
@@ -184,10 +190,6 @@ a{
 .swiper-slide-info-pavement > .info > .text{
     font-size: 20px;
     margin-top: 12px;
-}
-
-.swiper-slide-info-pavement > img {
-    height: 100%;
 }
 
 .swiper-slide-info-pavement > .info > .buttons{
@@ -233,6 +235,7 @@ a{
 
 .swiper-slide-info-tile>img{
     float: left;
+    width: auto;
 }
 
 .swiper-slide-info-tile > .info{
@@ -561,6 +564,7 @@ a{
     }
     .stone-type > .anim > .anim-text{
         font-size: 12px;
+        width: 100px;
         width: 90px;
         margin: 0;
     }

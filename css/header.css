@@ -19,8 +19,8 @@
     height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    .header{
-        justify-content: center;
+@media screen and (max-width: 1020px) {
+    .logo{
+        height: 90px;
     }
 }
