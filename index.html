@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/hamburgermenu.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script> 
 </head>
@@ -33,6 +35,7 @@
                 <li><a href="#tile-area">Плитка</a></li>
                 <li><a href="#slabs-area">Слеби</a></li>
                 <li><a href="#curbs-area">Бордюр</a></li>
+                <li><a href="#stone-types-catalog">Каталог каменю</a></li>
                 <li><a href="./communication_page.html">Замовити</a></li>
                 <!-- <li>
                     <img class="lang-img" width="30" height="30" src="https://img.icons8.com/color/48/ukraine-circular.png" alt="ukraine-circular"/>
@@ -56,7 +59,7 @@
 
     <div class="main-block">
         <div class="main-block-text-block">
-            <div class="text1">100% Гарантія Якості</div>
+            <!-- <div class="text1">100% Гарантія Якості</div> -->
             <div class="text2">Find Stone Products For Your Company</div>
             <div class="text3">Природний камінь - це матеріал, який не тільки дивує своєю красою, а й є надійним, довговічним і елегантним рішенням для інтер'єру та екстер'єру. POLISSYA GRANITE - продукція з українських гранітів напряму від виробника з багаторічним досвідом</div>
         </div>
@@ -72,6 +75,10 @@
                         <div class="info">
                             <div class="heading">Бруківка</div>
                             <div class="text">Міцний довговічний і натуральний матеріал, що використовується для мощення доріжок, проїздів, тротуарів, зведення огорож, а також для оздоблення в ландшафтному дизайні</div>
+                            <div class="buttons">
+                                <a href="./communication_page.html"><div class="button">Замовити</div></a>
+                                <a href="./pavement_gallery.html"><div class="button">Показати більше</div></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,114 +252,138 @@
             keyboard: true,
         });
     </script>
-    <div class="stone-types-container-heading">Типи каменю</div>
-    <div class="stone-types-container">
+    <div class="stone-types-container-heading">Каталог каменю</div>
+
+    <div id="stone-types-catalog" class="stone-types-container">
         <div class="stone-types-block">
-            <div style="background-image: url('./img/stone-types/1.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Букинське габро</div>
-                    <img src="./img/emerald" alt="">
-                </div>
+            <div class="stone-type">
+                <a href="./img/stone-types/1.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/1.jpg" alt="Gabbro">
+                </a>
+                <label>Gabbro</label>
             </div>
-            <div style="background-image: url('./img/stone-types/2.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Лабрадорит</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/3.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Дідковицький граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/4.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Межиріцький граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/5.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Новоданилівський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
+        
+            <div class="stone-type">
+                <a href="./img/stone-types/2.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/2.jpg" alt="Labradorite Volga Blue">
+                </a>
+                <label>Labradorite Volga Blue</label>
             </div>
 
-            <div style="background-image: url('./img/stone-types/6.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Капустянський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/7.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Василівський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/8.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Жадківський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/9.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Лезниківський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/10.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Маславський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
+            <div class="stone-type">
+                <a href="./img/stone-types/3.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/3.jpg" alt="Labradorite Black Ice">
+                </a>
+                <label>Labradorite Black Ice</label>
             </div>
 
-            <div style="background-image: url('./img/stone-types/11.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Токівський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/12.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Софієвський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/13.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Покостовський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/14.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Корнинський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
-            </div>
-            <div style="background-image: url('./img/stone-types/15.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Жежелівський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
+            <div class="stone-type">
+                <a href="./img/stone-types/4.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/4.jpg" alt="Labradorite Blue Ice">
+                </a>
+                <label>Labradorite Blue Ice</label>
             </div>
 
-            <div style="background-image: url('./img/stone-types/16.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Крупський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
+            <div class="stone-type">
+                <a href="./img/stone-types/5.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/5.jpg" alt="Grey Ukraine">
+                </a>
+                <label>Grey Ukraine</label>
             </div>
-            <div style="background-image: url('./img/stone-types/17.png')" class="stone-type">
-                <div class="anim">
-                    <div class="anim-text">Старобабанський граніт</div>
-                    <img src="./img/emerald.svg" alt="">
-                </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/6.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/6.jpg" alt="Pantera Grey">
+                </a>
+                <label>Pantera Grey</label>
             </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/7.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/7.jpg" alt="Ukrainian Autumn">
+                </a>
+                <label>Ukrainian Autumn</label>
+            </div>
+            
+            <div class="stone-type">
+                <a href="./img/stone-types/8.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/8.jpg" alt="Star of Ukraine">
+                </a>
+                <label>Star of Ukraine</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/9.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/9.jpg" alt="Flower of Ukraine">
+                </a>
+                <label>Flower of Ukraine</label>
+            </div>
+
+            <!-- end -->
+
+            <div class="stone-type">
+                <a href="./img/stone-types/10.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/10.jpg" alt="Rosso Santiago">
+                </a>
+                <label>Rosso Santiago</label>
+            </div>
+            
+            <div class="stone-type">
+                <a href="./img/stone-types/11.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/11.jpg" alt="Leopard red">
+                </a>
+                <label>Leopard red</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/12.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/12.jpg" alt="Leopard red">
+                </a>
+                <label>Leopard red</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/13.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/13.jpg" alt="Verde Oliva">
+                </a>
+                <label>Verde Oliva</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/14.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/14.jpg" alt="Rosa Raveno">
+                </a>
+                <label>Rosa Raveno</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/15.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/15.jpg" alt="Skifiya Gold">
+                </a>
+                <label>Skifiya Gold</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/16.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/16.jpg" alt="Chovnovsky">
+                </a>
+                <label>Chovnovsky</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/17.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/17.jpg" alt="Granat">
+                </a>
+                <label>Granat</label>
+            </div>
+
+            <div class="stone-type">
+                <a href="./img/stone-types/18.jpg" data-lightbox="stone-gallery">
+                    <img src="./img/stone-types/18.jpg" alt="Rosso Toledo">
+                </a>
+                <label>Rosso Toledo</label>
+            </div>
+
         </div>
     </div>
     
@@ -397,7 +428,7 @@
                     <div class="heading">Соціальні</div>
                     <div class="link"><a href="https://www.instagram.com/polissya.granite/?igshid=OGQ5ZDc2ODk2ZA%3D%3D">Instagram</a></div>
                     <div class="link"><a href="https://www.facebook.com/polissya.granite">Facebook</a></div>
-                    <div class="link"><a href="https://wa.me/+48730634203">WhatsApp</a></div>
+                    <div class="link"><a href="https://www.tiktok.com/@polissya.granite">Tik tok</a></div>
                 </div>
                 <!-- <div class="footer-footer-links">
                     <div class="heading">About</div>

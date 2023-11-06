@@ -92,9 +92,9 @@ body{
 }
 
 .communication-information > .icon-group-socials{
-    width: 115px;
+    width: 145px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
     margin: auto;
     margin-top: 15px;

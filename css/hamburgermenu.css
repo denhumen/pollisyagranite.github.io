@@ -469,7 +469,7 @@
 
 /* ......../ media query /.......... */
 
-@media (max-width: 1020px) {
+@media (max-width: 1320px) {
   .navbar {
     opacity: 0.95;
   }

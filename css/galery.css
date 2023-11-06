@@ -203,7 +203,7 @@
 
 @media screen and (max-width: 480px) {
     .main-grid{
-        height: 1900px;
+        height: 2000px;
     }
 
     .big-image-div{
@@ -212,8 +212,11 @@
     }
 
     .big-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-height: 372px;
-        min-height: 372px;
+        min-height: 272px;
     }
     
     .small-image{
